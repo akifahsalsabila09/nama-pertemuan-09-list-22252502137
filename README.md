@@ -1,43 +1,53 @@
-Pertemuan 10 - String dan Pengolahan Teks
+# Pertemuan 09 - List dan Pengolahan Data Numerik
+Nama: ...
+NIM: ...
+Kelas: ...
 
-Nama: Akifah salsabila
-NIM: 2225250137
-Kelas: 3F
+## Tujuan
 
-Tujuan
+Mengolah kumpulan data numerik menggunakan list Python, termasuk mengakses elemen berdasarkan indeks, menghitung jumlah data, dan menghitung nilai rata-rata.
 
-Mengolah dan menormalisasi data teks dengan string Python agar nama, inisial, dan kode kelas memiliki format yang konsisten.
+## Struktur Program
 
-Algoritma dan Pemrograman | Pertemuan 10
+Proyek ini terdiri atas folder dan file berikut:
 
-S1 Pendidikan Matematika FKIP Universitas Sultan Ageng Tirtayasa | 2026/2027 Ganjil
+```text
+.
+├── latihan/
+│   └── README.md
+└── praktik/
+    └── analisis_nilai_mahasiswa.py
+```
 
-Struktur Program
+- **Folder `latihan/`** berisi dokumentasi atau catatan latihan mengenai konsep list Python, seperti indeks, slicing, `append()`, `insert()`, `len()`, dan `sum()`.
+- **File `praktik/analisis_nilai_mahasiswa.py`** berisi program praktik untuk menyimpan data nilai mahasiswa dalam list, menampilkan data, menghitung jumlah nilai, dan menghitung rata-rata.
 
-File "tugas/normalisasi_data_mahasiswa.py" berisi program untuk menormalisasi nama mahasiswa, membuat inisial nama, dan menormalisasi kode kelas menggunakan fungsi string Python.
+## Cara Menjalankan
 
-Cara Menjalankan
+Jalankan perintah berikut dari direktori utama proyek:
 
-Jalankan perintah berikut melalui terminal dari folder utama proyek:
+```bash
+python3 praktik/analisis_nilai_mahasiswa.py
+```
 
-python3 tugas/normalisasi_data_mahasiswa.py
+Pastikan Python 3 sudah terpasang dan terminal berada di direktori utama proyek.
 
-Algoritma
+## Test Case
 
-1. Meminta pengguna memasukkan nama dan kode kelas.
-2. Menghapus spasi berlebih pada nama dan merapikan huruf kapital di setiap kata.
-3. Membuat inisial dari huruf pertama setiap kata pada nama.
-4. Mengubah kode kelas menjadi huruf kapital dan mengganti spasi antarkata dengan tanda hubung.
-5. Menampilkan nama, kode kelas, dan inisial yang telah dinormalisasi.
+| No. | Data/kondisi uji | Hasil yang diharapkan | Hasil aktual | Status |
+|---|---|---|---|---|
+| 1 | `[80, 90, 70]` | Jumlah data 3 dan rata-rata 80.0 | Belum dijalankan | Belum diuji |
+| 2 | Mengakses indeks `0` | Nilai 80 | Belum dijalankan | Belum diuji |
+| 3 | Mengakses indeks `-1` | Nilai 70 | Belum dijalankan | Belum diuji |
+| 4 | List kosong `[]` | Program tidak membagi dengan nol dan menampilkan pesan bahwa data belum tersedia | Belum dijalankan | Belum diuji |
 
-Test Case
+Catatan: Kolom hasil aktual harus diisi berdasarkan keluaran program setelah dijalankan. Status **Lulus** diberikan jika hasil aktual sesuai dengan hasil yang diharapkan, sedangkan **Gagal** diberikan jika hasilnya tidak sesuai.
 
-Input Nama| Input Kode| Hasil yang Diharapkan| Hasil Aktual| Status
-"aan hendrayana"| "pmat a 2026"| Aan Hendrayana | PMAT-A-2026 | AH| Aan Hendrayana | PMAT-A-2026 | AH| Lulus
-"fATHIYYAH mUTHMAINNAH"| "kelas b"| Fathiyyah Muthmainnah | KELAS-B | FM| Fathiyyah Muthmainnah | KELAS-B | FM| Lulus
-"BUDI"| "pmtk 01"| Budi | PMTK-01 | B| Budi | PMTK-01 | B| Lulus
-"siti  nur aisyah"| "kelas  c"| Siti Nur Aisyah | KELAS-C | SNA| Siti Nur Aisyah | KELAS-C | SNA| Lulus
+## Refleksi
 
-Refleksi
+- **Hal yang dipahami:** Indeks list Python dimulai dari 0, sedangkan indeks -1 digunakan untuk mengambil elemen terakhir. List memudahkan penyimpanan dan pengolahan banyak nilai dalam satu variabel.
+- **Kesalahan yang berhasil diperbaiki:** Memeriksa apakah list kosong sebelum menghitung rata-rata agar program tidak mengalami `ZeroDivisionError` ketika `len(data)` bernilai 0.
 
-Masalah teks yang ditemukan adalah penggunaan huruf kapital yang tidak konsisten dan spasi berlebih pada nama serta kode kelas. Masalah tersebut diperbaiki menggunakan fungsi "split()", "join()", "title()", dan "upper()" sehingga data menjadi lebih rapi dan seragam. Saya juga memahami cara membuat inisial secara otomatis menggunakan list dan perulangan.
+## Kesimpulan
+
+List Python memudahkan pengelolaan kumpulan nilai secara terstruktur. Fungsi `len()` digunakan untuk menghitung banyak data, sedangkan `sum()` digunakan untuk menjumlahkan nilai. Sebelum menghitung rata-rata, pastikan list berisi data agar pembagian dapat dilakukan dengan aman.
