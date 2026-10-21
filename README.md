@@ -1,7 +1,7 @@
 # Pertemuan 09 - List dan Pengolahan Data Numerik
-Nama: ...
-NIM: ...
-Kelas: ...
+Nama: Akifah Salsabila
+NIM: 2225250137
+Kelas: 3F
 
 ## Tujuan
 
