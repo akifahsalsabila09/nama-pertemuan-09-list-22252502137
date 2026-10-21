@@ -1,0 +1,5 @@
+nilai = [75, 80, 65, 90, 88, 70]
+print(nilai[0])    # Menampilkan elemen pertama[cite: 9]
+print(nilai[-1])   # Menampilkan elemen terakhir[cite: 9]
+print(nilai[:3])   # Menampilkan tiga elemen awal[cite: 9]
+print(nilai[1:4])  # Menampilkan elemen indeks 1 sampai 3[cite: 9]
